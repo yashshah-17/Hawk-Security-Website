@@ -2,22 +2,64 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 400px;
     margin: auto;
-    text-align: center;
-    font-family: arial;
+    text-align: justify;
+    font-family: 'San Francisco Text';
+    overflow-wrap: break-word;
   }
 
   .card button:hover {
-    opacity: 0.7;
+    background-color: #044e7f; 
+    color: white;
   }
+  
 
   .card button {
     border: none;
     outline: 0;
     padding: 12px;
     color: white;
-    background-color: #044e7f;
+    background-color: #f3ba0a;
     text-align: center;
     cursor: pointer;
     width: 100%;
     font-size: 18px;
   }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: auto;
+    align-content: space-between;
+    overflow-wrap: break-word;
+  }
+
+  .pad
+  {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  h2{
+    color: #044e7f;
+  }
+
+  ul li{
+    color: black;
+  }
+
+  /* .button a, a.button { 
+    padding: 12px 25px; 
+    color: #333; 
+    background-color: #f3ba0a; 
+    text-align: center; 
+    font-weight: 500; 
+    font-size: 16px; 
+    width: 100%; 
+    display: inline-block; 
+    position: relative; 
+    letter-spacing: 0.02em; 
+    border-radius: 3px; 
+    min-width: 150px; 
+  } */
+
