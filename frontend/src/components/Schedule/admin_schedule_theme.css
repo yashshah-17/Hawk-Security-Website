@@ -1,0 +1,39 @@
+.select_date_div > p {
+    font-family: cursive; 
+    font-size: 20px; 
+    color: #084e96;
+}
+
+.padding_div{
+    margin-bottom:20px
+}
+
+.padding_button{
+    padding:2px;
+}
+
+section.sectionBox__display{
+  padding-top: 0px;
+}
+
+.Table{
+    height: 0px;
+}
+
+.fullscreen__container{
+    padding-top: 15%;
+    width: 100vw;
+    height: 100vh;
+}
+
+#root > div.fullscreen__container > div > div > div > div.select_date_div.col-md-auto > p {
+    font-family: inherit;
+    vertical-align: center;
+    padding-top: 10%;
+}
+
+#root > div.fullscreen__container > div > div > div > div.col.col-lg-2 > button {
+    vertical-align: center;
+    margin-top: 8%;
+    background-color: #084e96;
+}
