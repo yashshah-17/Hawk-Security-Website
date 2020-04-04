@@ -75,8 +75,8 @@ class availability_form extends React.Component{
             }
     
             else if(temp_start === "-" && temp_end === "-"){
-                temp_start = "-1";
-                temp_end = "-1";
+                temp_start = "";
+                temp_end = "";
                 this.state.start.push(temp_start);
                 this.state.end.push(temp_end);
 

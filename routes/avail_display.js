@@ -56,8 +56,6 @@ router.route('/add').post((req, res) => {
       }
       else
       {
-        
-
         const avail_values = new Availability({ eid: emp_id, 
           Emp_Name: name, 
           MON_START: start[0], 
