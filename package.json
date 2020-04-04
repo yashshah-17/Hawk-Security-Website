@@ -45,7 +45,7 @@
     "validator": "^13.0.0"
   },
   "engines": {
-    "node": "10.16.0."
+    "node": "10.16.0"
   },
   "main": "app.js",
   "keywords": [],
