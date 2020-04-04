@@ -2,7 +2,7 @@
 var express = require('express');
 const cors = require('cors');
 const passport = require("passport");
-// var path = require('path');
+var path = require('path');
 // var cookieParser = require('cookie-parser');
 // var logger = require('morgan');
 // const http = require('http');
@@ -85,3 +85,11 @@ app.use('/employee', employeeRouter);
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('frontend/build'));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.json(__dirname, 'frontend', 'build', 'index.html'));
+  });
+}
