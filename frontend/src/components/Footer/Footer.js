@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-//import { Link } from 'react-router-dom';
+
+// importing CSS
 import './Footer.css'
 
 class Footer extends Component {
@@ -10,44 +11,7 @@ class Footer extends Component {
 
     render() {
         return (
-            // <footer className="footerSection">
-            //     <div className="footerTop p70-0 ">
-            //         <div className="wrapper">
-            //             <div className="clearfix noListStyle fortopInner">            
-            //                 <div className="footerNav ib w25 vt pr15 tabw50 xmw100 xmr0">
-            //                     <h6 className="titleHeight">Main Content</h6>
-            //                     <ul>
-            //                         <li><a href="javascript:void(0)">Home</a></li>
-            //                         <li><a href="javascript:void(0)">Services</a></li>
-            //                         <li><a href="javascript:void(0)">Contact Us</a></li>
-            //                         <li><a href="javascript:void(0)">Privacy Policy</a></li>
-            //                     </ul>
-            //                 </div>
-                            
-            //                 <div className="footerNav ib w25 vt pr15 withSocial tabw50 xmw100 xmr0">
-            //                     <h6 className="titleHeight">Connect with us</h6>
-            //                     <ul>
-            //                         <li><a href="javascript:void(0)"><i className="fa fa-google-plus"></i>Google</a></li>
-            //                         <li><a href="javascript:void(0)"><i className="fa fa-twitter"></i>Twitter</a></li>
-            //                         <li><a href="javascript:void(0)"><i className="fa fa-facebook"></i>Facebook</a></li>
-            //                         <li><a href="javascript:void(0)"><i className="fa fa-linkedin"></i>Linkdin</a></li>
-            //                         <li><a href="javascript:void(0)"><i className="fa fa-pinterest"></i>Pintrest</a></li>
-            //                         <li><a href="javascript:void(0)"><i className="fa fa-instagram"></i>instagram</a></li>
-            //                     </ul>
-            //                 </div>
-            //             </div>
-            //         </div>
-            //     </div>
-            //     <div className="footerBottom p20-0 text-center">
-            //         <div className="wrapper">
-            //         <p> &copy; 2020 Hawk Security. All rights has been reserved.</p>
-            //         </div>
-            //     </div>
-            // </footer>
-
-            // <!-- Footer -->
             <footer className="page-footer font-small unique-color-dark">
-
                 <div>  
                     <div className="container">
 
@@ -105,9 +69,7 @@ class Footer extends Component {
                             {/* <!-- Content --> */}
                             <h6 className="text-uppercase font-weight-bold">Hawk Security</h6>
                             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"></hr>
-                            {/* //TODO :: Fill proper content in the p tag */}
-                            <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit.</p>
+                            <p>Hawk security. Our security services make the world a safer & friendlier place</p>
 
                         </div>
                         {/* <!-- Grid column --> */}
@@ -119,16 +81,16 @@ class Footer extends Component {
                             <h6 className="text-uppercase font-weight-bold">Useful links</h6>
                             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"></hr>
                             <p>
-                            <a href="#!">Home</a>
+                            <a href="/">Home</a>
                             </p>
                             <p>
-                            <a href="#!">Login</a>
+                            <a href="/login">Login</a>
                             </p>
                             <p>
-                            <a href="#!">Contact Us</a>
+                            <a href="/#_service_">Services</a>
                             </p>
                             <p>
-                            <a href="#!">Privacy Policy</a>
+                            <a href="/#contact_us">Contact Us</a>
                             </p>
 
                         </div>
@@ -141,16 +103,13 @@ class Footer extends Component {
                             <h6 className="text-uppercase font-weight-bold">Services</h6>
                             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"></hr>
                             <p>
-                                <a href="#!">Healthcare</a>
+                                <a href="_service_">Healthcare</a>
                             </p>
                             <p>
-                                <a href="#!">Commercial</a>
+                                <a href="_services_Commercial">Commercial</a>
                             </p>
                             <p>
-                                <a href="#!">Infrastructure</a>
-                            </p>
-                            <p>
-                                <a href="#!">Industrial</a>
+                                <a href="_services_industry">Industrial</a>
                             </p>
 
                         </div>
@@ -163,10 +122,10 @@ class Footer extends Component {
                             {/* <!-- Links --> */}
                             <h6 className="text-uppercase font-weight-bold">Contact</h6>
                             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"></hr>
-                            <p><i className="fa fa-home mr-3"></i> New York, NY 10012, US</p>
-                            <p><i className="fa fa-envelope mr-3"></i> info@example.com</p>
-                            <p><i className="fa fa-phone mr-3"></i> + 01 234 567 88</p>
-                            <p><i className="fa fa-print mr-3"></i> + 01 234 567 89</p>
+                            <p><i className="fa fa-home mr-3"></i> South Park ST., NS B3J 2K9</p>
+                            <p><i className="fa fa-envelope mr-3"></i>hawkdeveloper@g.com</p>
+                            <p><i className="fa fa-phone mr-3"></i> +1 (902) 580-5450</p>
+                            <p><i className="fa fa-print mr-3"></i> +1 (902) 580-5450</p>
                         </div>
                         {/* <!-- Grid column --> */}
 
@@ -179,8 +138,7 @@ class Footer extends Component {
                 {/* <!-- Copyright --> */}
                  
                 <div className="footer-copyright text-center py-3">© 2020 Copyright:
-                    {/* //TODO :: Add the hyperlink of the application. */}
-                    <a href="https://mdbootstrap.com/"> <u>Hawk Security</u></a>
+                    <a href="/"> <u>Hawk Security</u></a>
                     . All rights has been reserved.
                 </div>
                 {/* <!-- Copyright --> */}

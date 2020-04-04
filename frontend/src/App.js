@@ -34,6 +34,9 @@ import resetPassword from './components/ProfileManagement/ForgotPassword/resetPa
 import Availability_form from './components/Availability/availability_form';
 import Availability_display from './components/Availability/availability_display';
 
+import JobDisplay from "./components/Career/job_display";
+import JobForm from "./components/Career/job_form";
+
 import PrivateRoute from "./components/private-route/PrivateRoute";
 
 import Add_location from './components/Location/Add_location';
@@ -95,8 +98,8 @@ class App extends Component{
 					
 					{/* Home Component */}
 					<Route exact path='/' component={Home} />
-
-					<Route exact path='/request' component={RequestQuote} />
+					<Route path='/request' component={RequestQuote} />
+					<Route path='/job_display' component={JobDisplay} />
 					
 					{/* Authentication Components */}
 					<Route path='/login' component={Login} />
@@ -107,23 +110,24 @@ class App extends Component{
 					<Switch>
 						{/* Employee Dashboard Component */}
               			<PrivateRoute exact path="/employee_dashboard" component={EmpDashboard} />
-						<PrivateRoute path='/employee_dashboard' component={EmpDashboard} />
-						<PrivateRoute path='/user_schedule_display' component={User_schedule_display} />
-						<PrivateRoute path='/User_update_profile' component={User_update_profile} />
+						<PrivateRoute exact path='/employee_dashboard' component={EmpDashboard} />
+						<PrivateRoute exact path='/user_schedule_display' component={User_schedule_display} />
+						<PrivateRoute exact path='/User_update_profile' component={User_update_profile} />
 						
 						{/* Admin Dashboard Components */}
-						<PrivateRoute path='/admin_dashboard' component={AdminDashboard} />
-						<PrivateRoute path='/admin_schedule_display' component={Admin_schedule_display} />
-						<PrivateRoute path='/admin_schedule_form' component={Admin_schedule_form} />
-						<PrivateRoute path='/Admin_update_profile' component={Admin_update_profile} />
+						<PrivateRoute exact path='/admin_dashboard' component={AdminDashboard} />
+						<PrivateRoute exact path='/admin_schedule_display' component={Admin_schedule_display} />
+						<PrivateRoute exact path='/admin_schedule_form' component={Admin_schedule_form} />
+						<PrivateRoute exact path='/Admin_update_profile' component={Admin_update_profile} />
+						<PrivateRoute exact path='/job_form' component={JobForm} />
 						
 						{/* This will be common Component for Admin and Employee */}
-						<PrivateRoute path='/Remove_profile' component={Remove_profile} />
+						<PrivateRoute exact path='/Remove_profile' component={Remove_profile} />
 
 						{/* I don't have Knowledge regurding this thus in last(Misc) */}
-						<PrivateRoute path='/availability_form' component={Availability_form} />
-						<PrivateRoute path='/availability_display' component={Availability_display}/>
-						<PrivateRoute path='/Add_location' component={Add_location} />
+						<PrivateRoute exact path='/availability_form' component={Availability_form} />
+						<PrivateRoute exact path='/availability_display' component={Availability_display}/>
+						<PrivateRoute exact path='/Add_location' component={Add_location} />
             		</Switch>
 
 					{/* This will the reset Password route */}
