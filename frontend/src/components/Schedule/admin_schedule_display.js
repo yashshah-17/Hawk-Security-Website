@@ -47,7 +47,7 @@ class Admin_schedule_display extends React.Component {
     
     let current_day = cur_year + '-' + cur_month + '-' + cur_date ;
 
-    axios.get('http://localhost:5000/shift_details/' +  current_day)
+    axios.get('/shift_details/' +  current_day)
     .then(res => {
         
 
@@ -76,7 +76,7 @@ class Admin_schedule_display extends React.Component {
     const formattedDate = date.getFullYear() + '-' + (date.getUTCMonth()+1) + '-' +date.getDate();
    
 
-    axios.get('http://localhost:5000/shift_details/' +  formattedDate)
+    axios.get('/shift_details/' +  formattedDate)
       .then(res => {
           
 

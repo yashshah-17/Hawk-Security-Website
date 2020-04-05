@@ -53,14 +53,14 @@ class Job_form extends React.Component {
     
         const job = {
             JOB_ID: this.state.JOB_ID,
-          JOB_ROLE: this.state.JOB_ROLE,          
-          JOB_DESC: this.state.JOB_DESC,
-          JOB_QUAL: this.state.JOB_QUAL           
+            JOB_ROLE: this.state.JOB_ROLE,          
+            JOB_DESC: this.state.JOB_DESC,
+            JOB_QUAL: this.state.JOB_QUAL           
         }
     
         console.log(job);
     
-        axios.post('http://localhost:5000/jobs/add', job)
+        axios.post('/jobs/add', job)
           .then(res => console.log(res.data));
     
        // window.jobs = '/';

@@ -26,7 +26,7 @@ class availability_form extends React.Component{
         const local_id = this.props.auth.user.id;
         console.log(local_id);
         
-        axios.get('http://localhost:5000/availability_display/' + local_id)
+        axios.get('/avail_disp' + local_id)
           .then(response => {
             this.setState({
                 first_name: response.data[0].firstName
@@ -106,7 +106,7 @@ class availability_form extends React.Component{
         
             console.log(avail_data);
         
-        axios.post('http://localhost:5000/availability_display/add', avail_data)
+        axios.post('/avail_disp/add', avail_data)
             .then(res => console.log(res.data));
     
         alert("Availability data updated");

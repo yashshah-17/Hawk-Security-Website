@@ -30,7 +30,7 @@ class admin_schedule_form extends React.Component {
       }      
     
     componentDidMount() {
-        axios.get('http://localhost:5000/shift_upload/')
+        axios.get('/shift_upload/')
           .then(response => {
             if (response.data.length > 0) {
               this.setState({
@@ -43,7 +43,7 @@ class admin_schedule_form extends React.Component {
             console.log(error);
         })
     
-        axios.get('http://localhost:5000/location/')
+        axios.get('/location/')
           .then(response => {
             if (response.data.length > 0) {
               this.setState({
@@ -70,7 +70,7 @@ class admin_schedule_form extends React.Component {
 
     onChangeEmpName(e) {
         
-        axios.get('http://localhost:5000/shift_upload/' + e.target.value)
+        axios.get('/shift_upload/' + e.target.value)
           .then(res => {
             console.log(res.data[0]._id);  
             this.setState({
@@ -164,7 +164,7 @@ class admin_schedule_form extends React.Component {
     
         console.log(shift_data);
     
-        axios.post('http://localhost:5000/shift_upload/add', shift_data)
+        axios.post('/shift_upload/add', shift_data)
           .then(res => console.log(res.data));
     
         alert("Schedule detail for " + this.state.emp_name + " have been uploaded");

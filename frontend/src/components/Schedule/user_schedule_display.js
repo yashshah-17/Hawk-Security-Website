@@ -42,7 +42,7 @@ class user_schedule_display extends React.Component {
 
     console.log(emp_id);
 
-    axios.get('http://localhost:5000/shift_details/empshifts/' + emp_id)
+    axios.get('/empshifts/' + emp_id)
       .then(res => {
         console.log(res.data);
         let events = [];
