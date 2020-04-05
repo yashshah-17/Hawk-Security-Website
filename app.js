@@ -78,9 +78,11 @@ app.use('/shift_upload', shiftuploadRouter);
 const availRouter = require('./routes/avail_display');
 app.use('/avail_disp', availRouter);
 
-// defining routes 
 const employeeRouter = require('./routes/profileManagement');
 app.use('/employee', employeeRouter);
+
+const jobRouter = require('./routes/job_up_display');
+app.use('/job_det', jobRouter);
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);

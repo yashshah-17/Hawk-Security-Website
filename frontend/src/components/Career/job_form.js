@@ -1,8 +1,13 @@
+// @Author: Milap Bhanderi - B00823109
+// Page: Job_form
+
 import React from 'react';
 import '../../main.css';
 
 import axios from 'axios'; 
 import { Link } from 'react-router-dom';
+
+// Backend Connection 
 
 class Job_form extends React.Component {
     constructor(props) {
@@ -162,69 +167,8 @@ class Job_form extends React.Component {
     </div>
 </section>
 
-
-
-
-
-{/* <!--footer Section--> */}
-<footer class="footerSection">
-    <div class="footerTop p70-0 ">
-        <div class="wrapper">
-            <div class="clearfix noListStyle fortopInner">
-                    <div class="footerNav ib w25  vt pr15 tabw50 xmw100 xmr0">
-                        <h6 class="titleHeight">Quick Links</h6>
-                        <ul>
-                            <li><a href="javascript:void(0)">Equipment</a></li>
-                            <li><a href="javascript:void(0)">Service &amp; Support</a></li>
-                            <li><a href="javascript:void(0)">Company</a></li>
-                            <li><a href="javascript:void(0)">Blog</a></li>
-                            <li><a href="javascript:void(0)">Pricing</a></li>
-                            <li><a href="javascript:void(0)">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footerNav ib w25 vt pr15 tabw50 xmw100 xmr0">
-                        <h6 class="titleHeight">Extra</h6>
-                        <ul>
-                            <li><a href="javascript:void(0)">Schedule a Call</a></li>
-                            <li><a href="javascript:void(0)">Terms of Service</a></li>
-                            <li><a href="javascript:void(0)">Security</a></li>
-                            <li><a href="javascript:void(0)">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="footerNav ib w25 vt pr15 withSocial tabw50 xmw100 xmr0">
-                        <h6 class="titleHeight">Connect with us</h6>
-                        <ul>
-                            <li><a href="javascript:void(0)"><i class="fa fa-google-plus"></i>Google</a></li>
-                            <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i>Twitter</a></li>
-                            <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i>Facebook</a></li>
-                            <li><a href="javascript:void(0)"><i class="fa fa-linkedin"></i>Linkdin</a></li>
-                            <li><a href="javascript:void(0)"><i class="fa fa-pinterest"></i>Pintrest</a></li>
-                            <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i>instagram</a></li>
-                        </ul>
-                    </div>
-                    {/* <div class="newlaterForm ib w25 vt tabw50 xmw100 xmr0">
-                <h6 class="titleHeight">Newslater sign up</h6>
-                <form>
-                    <fieldset>
-                        <input type="email" placeholder="you@example.com"/>
-                    </fieldset>
-                    <fieldset>
-                        <input type="button" value="Sign up"/>
-                    </fieldset>
-                </form>
-            </div> */}
-            </div>
-        </div>
-
-    </div>
-    <div class="footerBottom p20-0 text-center">
-        <div class="wrapper">
-            <p>Hawk Security @2020.All rights has been reserved</p>
-        </div>
-    </div>
-            </footer>
-        </React.Fragment>    
-    )
+</React.Fragment>    
+)
 }
 }
 
