@@ -25,7 +25,7 @@ const JobDetails = props => (
 );
   
 
-class job_display extends Component {
+class JobDisplay extends Component {
   constructor(props) {
     super(props);
 
@@ -65,4 +65,4 @@ class job_display extends Component {
   }
 }
 
-export default job_display
+export default JobDisplay
