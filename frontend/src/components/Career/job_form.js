@@ -76,25 +76,6 @@ class Job_form extends React.Component {
         <React.Fragment>
 
 
-<header class="altBg">
-    <div class="headerMain">
-        <div class="wrapper clearfix">
-            <div class="siteLogo fl">
-                <a href="home.html"><img src="./images/Sitelogo.png" alt=""/></a>
-            </div>
-            <a class="expandMenu"><i></i><i></i><i></i></a>
-           <div class="siteNavigation fr">
-                <ul class="parent">
-                    <li><a href="profile.html">PROFILE</a></li>
-                    <li><a href="availablity.html">SHIFT SCHEDULES</a></li>
-                    <li><a href="paystub.html">PAYSTUB</a></li>
-                    <li><a href="jobs.html">JOB POSTING</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</header>
-
 {/* JOB Form */}
 
 <section class="pb70 sectionBox">
