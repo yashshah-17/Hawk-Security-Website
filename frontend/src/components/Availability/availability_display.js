@@ -35,7 +35,7 @@ class availability_display extends Component {
     }
   
     componentDidMount() {
-      axios.get('http://localhost:5000/avail_disp')
+      axios.get('/avail_disp')
         .then(response => {
           this.setState({ availList: response.data })
         })
