@@ -53,10 +53,10 @@ app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('frontend/build'));
+// if (process.env.NODE_ENV === 'production') {
+//   app.use(express.static('frontend/build'));
 
-  app.get('*', (req, res) => {
-    res.sendFile(path.json(__dirname, 'frontend', 'build', 'index.html'));
-  });
-}
+//   app.get('*', (req, res) => {
+//     res.sendFile(path.json(__dirname, 'frontend', 'build', 'index.html'));
+//   });
+// }
