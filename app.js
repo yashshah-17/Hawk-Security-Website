@@ -31,6 +31,9 @@ app.use(passport.initialize());
 // Passport config
 require("./config/passport")(passport);
 
+const indexRouter = require('./routes/index');
+app.use('/', indexRouter);
+
 const locationRouter = require('./routes/location');
 app.use('/location', locationRouter);
 
