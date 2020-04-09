@@ -1,3 +1,5 @@
+/* Nikita Patel -- B00826639*/
+
 const router = require('express').Router();
 
 let Shiftdetails = require('../models/shift_details.model.js'); 
@@ -13,6 +15,7 @@ router.route('/').get((req, res) => {
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
+/*  API for fatching shifts data based on employee id */
 router.route('/empshifts/:empid').get((req, res) => {
     const empid = req.params.empid;
     console.log(empid)
@@ -21,6 +24,7 @@ router.route('/empshifts/:empid').get((req, res) => {
       .catch(err => res.status(400).json('Error: ' + err));
   });
 
+/*  API for fatching shifts data based on date */
 router.route('/:date').get((req, res) => {
 
     const scheduleDate = new Date(req.params.date);

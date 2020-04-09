@@ -1,4 +1,9 @@
-const JwtStrategy = require("passport-jwt").Strategy;
+/**
+ * @file configuring JWT-session stratergy.
+ * @author Krutin Trivedi <krutin@dal.ca>
+ */
+
+ const JwtStrategy = require("passport-jwt").Strategy;
 const ExtractJwt = require("passport-jwt").ExtractJwt;
 const mongoose = require("mongoose");
 const Employee = require('../models/employee.model');

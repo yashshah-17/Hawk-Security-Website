@@ -1,3 +1,9 @@
+/**
+ * @file Request a Quote component.
+ * @author Krutin Trivedi, Banner No: B00843515 <krutin@dal.ca>
+ */
+
+//importing Components & required Modules
 import React, { Component } from 'react';
 import { Button } from "react-bootstrap";
 import { withRouter } from "react-router-dom";

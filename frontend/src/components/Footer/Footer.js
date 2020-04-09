@@ -1,3 +1,9 @@
+/**
+ * @file Footer Component.
+ * @author Krutin Trivedi, Banner No: B00843515 <krutin@dal.ca>
+ */
+
+//importing Components & required Modules
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

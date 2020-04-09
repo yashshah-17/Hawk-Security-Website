@@ -1,3 +1,9 @@
+/**
+ * @file Reset User Password component.
+ * @author Krutin Trivedi, Banner No: B00843515 <krutin@dal.ca>
+ */
+
+//importing Components & required Modules
 import React, { Component } from 'react';
 import { Button } from "react-bootstrap";
 import { withRouter } from "react-router-dom";
@@ -133,7 +139,7 @@ class ResetPassword extends Component {
               
               {/* Register Text */}
               <div className="login_text">
-                <b>Forgot Password</b>
+                <b>Reset Password</b>
               </div>
               
               {/* Register Form Component */}

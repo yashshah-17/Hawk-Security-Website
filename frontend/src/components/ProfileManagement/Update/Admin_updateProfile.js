@@ -1,3 +1,9 @@
+/**
+ * @file Admin Update Profile component.
+ * @author Krutin Trivedi, Banner No: B00843515 <krutin@dal.ca>
+ */
+
+//importing Components & required Modules
 import React, { Component } from 'react';
 
 import AdminUpdateProfileForm from "./Admin_updateProfileForm";

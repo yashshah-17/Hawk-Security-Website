@@ -1,4 +1,9 @@
-//importing Components & required Modules
+/**
+ * @file Dynamic Navbar component.
+ * @author Krutin Trivedi, Banner No: B00843515 <krutin@dal.ca>
+ */
+
+ //importing Components & required Modules
 import React, { Component } from 'react';
 import { Link, withRouter } from "react-router-dom";
 import { connect } from "react-redux";

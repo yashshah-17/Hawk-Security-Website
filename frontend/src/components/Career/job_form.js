@@ -68,7 +68,7 @@ class Job_form extends React.Component {
         axios.post('/jobs/add', job)
           .then(res => console.log(res.data));
     
-       // window.jobs = '/';
+       window.location = '/';
       }
     
     render() {

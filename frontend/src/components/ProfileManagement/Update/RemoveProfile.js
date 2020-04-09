@@ -1,3 +1,9 @@
+/**
+ * @file Remove Profile component.
+ * @author Krutin Trivedi, Banner No: B00843515 <krutin@dal.ca>
+ */
+
+//importing Components & required Modules
 import React, { Component } from 'react';
 import { Button } from "react-bootstrap";
 import PropTypes from "prop-types";
@@ -5,6 +11,7 @@ import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import { removeUser } from "../../../actions/authActions";
 
+//importing CSS
 import './RemoveProfile.css';
 
 class RemoveProfile extends Component {

@@ -1,3 +1,9 @@
+/**
+ * @file User Update Profile Form component.
+ * @author Krutin Trivedi, Banner No: B00843515 <krutin@dal.ca>
+ */
+
+//importing Components & required Modules
 import React from 'react';
 import { Button } from "react-bootstrap";
 import { withRouter } from "react-router-dom";
@@ -73,7 +79,7 @@ class UserUpdateProfileForm extends React.Component {
                 this.setState({
                     phoneTouch: true  
                 });
-                phoneValid = value.length == 10;
+                phoneValid = value.length === 10;
                 fieldValidationErrors.phone = 
                     phoneValid 
                         ? <p className="isValid">Awesome! phone number is valid</p>

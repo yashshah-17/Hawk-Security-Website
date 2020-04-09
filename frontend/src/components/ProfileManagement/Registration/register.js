@@ -1,3 +1,9 @@
+/**
+ * @file Register User component.
+ * @author Krutin Trivedi, Banner No: B00843515 <krutin@dal.ca>
+ */
+
+//importing Components & required Modules
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import RegistrationForm from './RegistrationForm';

@@ -1,3 +1,5 @@
+// Nikita Patel --  B00826639 
+
 import React from 'react'
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
@@ -42,7 +44,7 @@ class user_schedule_display extends React.Component {
 
     console.log(emp_id);
 
-    axios.get('/empshifts/' + emp_id)
+    axios.get('shift_details/empshifts/' + emp_id)
       .then(res => {
         console.log(res.data);
         let events = [];

@@ -1,3 +1,9 @@
+/**
+ * @file For sending mail to client using nodemailer.
+ * @author Krutin Trivedi <krutin@dal.ca>
+ */
+
+//importing Components & required Modules
 var nodemailer = require('nodemailer');
 
 var sendMailMethods = {

@@ -1,3 +1,9 @@
+/**
+ * @file Auth action reducer. helper of Redux implementation.
+ * @author Krutin Trivedi <krutin@dal.ca>
+ */
+
+//importing Components & required Modules
 import {
     SET_CURRENT_USER,
     USER_LOADING

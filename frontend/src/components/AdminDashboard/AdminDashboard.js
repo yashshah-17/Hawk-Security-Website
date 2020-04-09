@@ -1,3 +1,9 @@
+/**
+ * @file Admin dashboard for the Application.
+ * @author Krutin Trivedi, Banner No: B00843515 <krutin@dal.ca>
+ */
+
+//importing Components & required Modules
 import React, { Component } from 'react'
 import AdminScheduleDisplay from '../Schedule/admin_schedule_display';
 

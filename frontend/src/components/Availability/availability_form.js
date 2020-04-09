@@ -1,3 +1,6 @@
+// @Author: Milap Bhanderi - B00823109
+// Page: availability_form
+
 import React, { Component } from 'react';
 import axios from 'axios';
 import '../../main.css';
@@ -107,10 +110,15 @@ class availability_form extends React.Component{
             console.log(avail_data);
         
         axios.post('/avail_disp/add', avail_data)
-            .then(res => console.log(res.data));
-    
-        alert("Availability data updated");
-        window.location = '/';
+            .then(res => {
+                alert("Availability data updated");
+                window.location = '/employee_dashboard';
+                console.log(res.data);
+            })
+            .catch(err => {
+                window.location = '/errorCode400';
+                console.log(err.data);
+            });
         }
     }
 
@@ -139,12 +147,6 @@ class availability_form extends React.Component{
                                     </div>
                                 </div>
                                 <div>
-                                    {/* <div class="ib vt w50 mw100">
-                                        <div class="field">
-                                            <label for="emId">Employee Id</label>
-                                            <input type="text" name="emId" disabled placeholder={this.state.id}></input>
-                                        </div>
-                                    </div> */}
                                     <div class="ib vt w50 mw100">
                                         <div class="field">
                                             <label for="efDate">Effective Date</label>
@@ -230,6 +232,3 @@ availability_form.propTypes = {
   });
   
 export default connect(mapStateToProps)(withRouter(availability_form));
-
-
-// export default availability_form

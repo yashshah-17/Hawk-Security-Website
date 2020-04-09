@@ -1,3 +1,8 @@
+/**
+ * @file API for Profile management for the Application.
+ * @author Krutin Trivedi <krutin@dal.ca>
+ */
+
 const router = require('express').Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");

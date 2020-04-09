@@ -1,3 +1,8 @@
+/**
+ * @file Login User Form component.
+ * @author Krutin Trivedi, Banner No: B00843515 <krutin@dal.ca>
+ */
+
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import LoginForm from './LoginForm';

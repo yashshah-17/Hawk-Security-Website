@@ -1,3 +1,9 @@
+/**
+ * @file Error page with status code of 404 for the Application.
+ * @author Krutin Trivedi, Banner No: B00843515 <krutin@dal.ca>
+ */
+
+//importing Components & required Modules
 import React from 'react';
 
 function Error404(props) {

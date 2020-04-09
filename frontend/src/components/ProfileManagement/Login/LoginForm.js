@@ -1,3 +1,8 @@
+/**
+ * @file Login User component.
+ * @author Krutin Trivedi, Banner No: B00843515 <krutin@dal.ca>
+ */
+
 import React from 'react';
 import { Button } from "react-bootstrap";
 import { withRouter } from "react-router-dom";

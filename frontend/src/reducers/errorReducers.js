@@ -1,3 +1,9 @@
+/**
+ * @file Error action reducer. helper of Redux implementation.
+ * @author Krutin Trivedi <krutin@dal.ca>
+ */
+
+//importing Components & required Modules
 import { GET_ERRORS } from "../actions/types";
 
 const initialState = {};

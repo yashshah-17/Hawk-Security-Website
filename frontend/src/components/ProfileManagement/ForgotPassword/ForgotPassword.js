@@ -1,3 +1,9 @@
+/**
+ * @file Forgot User Password component.
+ * @author Krutin Trivedi, Banner No: B00843515 <krutin@dal.ca>
+ */
+
+//importing Components & required Modules
 import React, { Component } from 'react';
 import { Button } from "react-bootstrap";
 import { Link, withRouter } from "react-router-dom";

@@ -1,3 +1,9 @@
+/**
+ * @file Reset Password schema.
+ * @author Krutin Trivedi <krutin@dal.ca>
+ */
+
+//importing Components & required Modules
 const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
